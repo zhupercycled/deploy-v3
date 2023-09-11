@@ -1,3 +1,8 @@
+## Debug
+
+On Nodejs >18.0 yarn start throws an error: ERR_OSSL_EVP_UNSUPPORTED
+Fix it by running $env:NODE_OPTIONS="--openssl-legacy-provider" inside the Visual Studio Code terminal $env:NODE_OPTIONS="--openssl-legacy-provider" before the command.
+
 # Deploy Uniswap V3 Script
 
 This package includes a CLI script for deploying the latest Uniswap V3 smart contracts to any EVM (Ethereum Virtual Machine) compatible network.
