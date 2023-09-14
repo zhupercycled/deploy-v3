@@ -1,14 +1,14 @@
 ## Debug
 
 On Nodejs >18.0 yarn start throws an error: ERR_OSSL_EVP_UNSUPPORTED
-Fix it by running $env:NODE_OPTIONS="--openssl-legacy-provider" inside the Visual Studio Code terminal before the command.
+Fix it by running `$env:NODE_OPTIONS="--openssl-legacy-provider"` inside the Visual Studio Code terminal before the command.
 
-Before yarn start, manually run the package.json -> scripts: postbuild content cat shebang.txt dist/index.js > dist/index.cmd.js && mv dist/index.cmd.js dist/index.js
+Before yarn start, manually run the `package.json` -> scripts: postbuild content `cat shebang.txt dist/index.js > dist/index.cmd.js && mv dist/index.cmd.js dist/index.js`
 
 When referencing local forks inside package.json (file:../uniswap/v3-core, etc.) you first have to compile the
 contracts inside the fork repository (uniswap/v3-core) then run 
 
-npm install
+`npm install`
 
 # Deploy Uniswap V3 Script
 
