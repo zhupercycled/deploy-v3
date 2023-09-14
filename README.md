@@ -5,6 +5,11 @@ Fix it by running $env:NODE_OPTIONS="--openssl-legacy-provider" inside the Visua
 
 Before yarn start, manually run the package.json -> scripts: postbuild content cat shebang.txt dist/index.js > dist/index.cmd.js && mv dist/index.cmd.js dist/index.js
 
+When referencing local forks inside package.json (file:../uniswap/v3-core, etc.) you first have to compile the
+contracts inside the fork repository (uniswap/v3-core) then run 
+
+npm install
+
 # Deploy Uniswap V3 Script
 
 This package includes a CLI script for deploying the latest Uniswap V3 smart contracts to any EVM (Ethereum Virtual Machine) compatible network.
