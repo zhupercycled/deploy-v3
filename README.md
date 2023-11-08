@@ -8,7 +8,11 @@ Before yarn start, manually run the `package.json` -> scripts: postbuild content
 When referencing local forks inside package.json (file:../uniswap/v3-core, etc.) you first have to compile the
 contracts inside the fork repository (uniswap/v3-core) then run 
 
-`npm install`
+`yarn install --force`
+
+To upgrade a specific local package:
+
+`yarn upgrade package-name`
 
 # Deploy Uniswap V3 Script
 
